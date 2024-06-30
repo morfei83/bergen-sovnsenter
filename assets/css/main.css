@@ -4320,7 +4320,13 @@ section {
 #about .major h2 {
     font-size: 2.5em;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+#about .major p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 30px;
 }
 
 .team-container {
@@ -4337,12 +4343,17 @@ section {
     margin: 20px;
 }
 
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
 .team-image {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(57, 131, 120, 0.6);
     margin-bottom: 15px;
     transition: transform 0.3s ease;
 }
@@ -4361,3 +4372,4 @@ section {
 .team-image:hover {
     transform: scale(1.05);
 }
+

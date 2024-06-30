@@ -3405,7 +3405,7 @@ a:hover {
 /* Section Two */
 #two {
     padding: 20px;
-    text-align: left; /* Align text to the left */
+    text-align: center; /* Center align text */
 }
 
 #two .app-logo {
@@ -3416,11 +3416,11 @@ a:hover {
 }
 
 #two h2, #two h3 {
-    text-align: left; /* Ensure headings are left-aligned */
+    text-align: center; /* Ensure headings are center-aligned */
 }
 
 #two p {
-    text-align: left; /* Ensure paragraphs are left-aligned */
+    text-align: center; /* Ensure paragraphs are center-aligned */
 }
 
 .services {
@@ -3447,6 +3447,9 @@ a:hover {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
+    display: block; /* Ensure icon is centered within the service */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Additional styling for note */

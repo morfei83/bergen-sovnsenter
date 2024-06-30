@@ -4304,3 +4304,60 @@ section {
 }
 
 
+/* Om oss seksjon */
+#about {
+    background: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: solid 2px #efefef;
+}
+
+#about .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about .major h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    margin: 20px;
+}
+
+.team-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #666;
+}
+
+.team-image:hover {
+    transform: scale(1.05);
+}

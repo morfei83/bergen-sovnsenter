@@ -2654,6 +2654,7 @@ input, select, textarea {
     display: flex; /* Center the image inside the container */
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px; /* Add margin bottom for spacing */
 }
 
 #header .image.avatar img {
@@ -2663,24 +2664,20 @@ input, select, textarea {
 
 /* Stiler for klikkbare lenker */
 .header-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 2em; /* Increase the top margin to create more space between logo and links */
+    text-align: center; /* Center align the links */
 }
 
-.header-link {
+.header-links a {
+    display: block;
+    color: #ffffff; /* Set text color to white */
     text-decoration: none;
-    color: #000; /* Sett ønsket farge */
-    font-size: 1.2em;
-    padding: 10px;
-    border: 1px solid #ddd; /* Legg til en kantlinje hvis ønskelig */
-    border-radius: 5px; /* Gjør hjørnene avrundet */
-    transition: color 0.3s; /* Legg til en overgang for fargeendring */
+    font-size: 1.5em;
+    margin: 0.5em 0; /* Add margin for spacing between links */
 }
 
-.header-link:hover {
-    color: #333; /* Endre tekstfarge ved hover */
+.header-links a:hover {
+    color: #398378; /* Change text color on hover */
 }
 
 

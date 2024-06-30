@@ -6,7 +6,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="icon" type="image/png" href="images/Color logo - no background - only symbol (3).png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-d0q0N5cd0eIcPqRXm2p5q8cu5jL8nr5q5fsTr9W1e9I+0g5sm4hrF5bpI5D2vYr6B2s5lcw8UXjc2KH1+uv5A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="is-preload">
+    <style>
+        .store-buttons img {
+            height: 60px;
+            margin: 5px;
+            border: none;
+            box-shadow: none;
+            background: none;
+            width: auto;
+        }
+        .store-buttons {
+            display: flex;
+            align-items: center;
+        }
+        .store-buttons a {
+            display: inline-block;
+            border: none;
+        }
+        .app-logo {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+        .app-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .app-content {
+            flex: 1;
+            min-width: 300px;
+        }
+        .app-image-container {
+            flex: 1;
+            max-width: 1000px;
+            display: flex;
+            justify-content: center; /* Center the image horizontally */
+            margin: 0 auto; /* Center the container within its parent */
+            overflow: hidden; /* Hide any overflow */
+            padding: 20px; /* Add some padding if needed */
+            animation: slideInFromRight 1s ease-out; /* Apply the slide-in animation */
+        }
+        .app-image {
+            width: 100%;
+            height: auto;
+            object-fit: contain; /* Ensure the image scales correctly within its container */
+        }
+        .app-logo {
+            display: block;
+            margin: 20px 0;
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+        }
+
+        /* Define the keyframes animation */
+        @keyframes slideInFromRight {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Added styles for link and hover */
+        a {
+            -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+            -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+            -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+            transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+            border-bottom: dotted 1px;
+            color: #49bf9d;
+            text-decoration: none;
+        }
+
+        a:hover {
+            border-bottom-color: transparent;
+            color: #49bf9d !important;
+            text-decoration: none;
+            background-color: transparent; /* Ensure no background color on hover */
+        }
+
+        /* Added styles for list item hover effect */
+        ul li:hover {
+            letter-spacing: 2px; /* Increased spacing */
+            font-size: 1.3em; /* Increased font size */
+            background-color: transparent; /* Ensure no background color on hover */
+            transition: letter-spacing 0.3s ease, font-size 0.3s ease;
+        }
+
+        /* Added styles for .features and ul.actions */
+        .features {
+            margin: 0 0 2em 0;
+        }
+
+        .features li {
+            border-top: solid 2px #f2f2f2;
+            padding: 0.75em 0;
+            display: flex;
+            align-items: center; /* Center-align items */
+            transition: background-color 0.3s ease;
+        }
+
+        .features li:hover {
+            background-color: transparent; /* Ensure no background color on hover */
+        }
+
+        .features li .icon {
+            margin-right: 0.75em;
+        }
+
+        ul.actions {
+            margin: 0 0 2em 0;
+            padding-left: 1em; /* Added padding for nested list items */
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em; /* Added gap for better spacing */
+        }
+
+        ul.actions li {
+            padding: 0;
+            display: inline-block;
+        }
+
+        ul.actions li.primary {
+            padding-left: 0;
+            border-left: solid 1px rgba(144, 144, 144, 0.25);
+            padding: 0.5em 0 0 1em;
+        }
+
+        ul.actions li.primary:first-child {
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        /* Remove hover background for icons */
+        ul.icons li a:hover {
+            background-color: transparent !important; /* Remove background color on hover */
+            color: #49bf9d !important; /* Keep color change on hover */
+            transform: none !important; /* Prevent size increase on hover */
+        }
+
+        /* Remove hover background for labeled icons */
+        ul.labeled-icons li:hover {
+            background-color: transparent !important; /* Remove background color on hover */
+            color: inherit !important; /* Keep original text color */
+            transform: none !important; /* Prevent size increase on hover */
+        }
+
+        ul.labeled-icons li h3 {
+            color: inherit; /* Inherit the color */
+            transition: color 0.3s ease; /* Smooth transition for color change */
+        }
+
+        ul.labeled-icons li:hover h3 {
+            color: #49bf9d !important; /* Color change on hover */
+        }
+    </style>
 </head>
 <body class="is-preload">
 
@@ -37,6 +200,53 @@
         </div>
     </div>
 </section>
+
+<!-- Add this CSS to your stylesheet -->
+<style>
+    #one {
+        background: #f0f4f8;
+        padding: 60px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .major h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .app-section {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        width: 100%;
+    }
+    .app-content {
+        flex: 1;
+        padding: 20px;
+    }
+    .app-content p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 20px;
+    }
+    .app-image-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .app-image {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+</style>
 
 <!-- Section Two -->
 <section id="two">
@@ -73,6 +283,60 @@
         </div>
     </div>
 </section>
+
+<!-- Add this CSS to your stylesheet -->
+<style>
+    #two {
+        background: #f9f9f9;
+        padding: 60px 20px;
+    }
+    .overlay-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .overlay-content {
+        max-width: 800px;
+    }
+    .app-logo-container {
+        margin-bottom: 20px;
+    }
+    .app-logo {
+        width: 150px;
+    }
+    .services {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .service {
+        background: #fff;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        flex: 1;
+        min-width: 250px;
+        max-width: 300px;
+        text-align: center;
+    }
+    .service-icon-container {
+        margin-bottom: 10px;
+    }
+    .service-icon {
+        font-size: 50px;
+        color: #49bf9d;
+    }
+    h4 {
+        margin: 10px 0;
+    }
+    p {
+        font-size: 14px;
+        color: #666;
+    }
+</style>
 
 <!-- Three -->
 <section id="three">
@@ -111,16 +375,17 @@
                 </li>
                 <li>
                     <h3 class="icon solid fa-mobile-alt"><span class="label">Telefon</span></h3>
-                    (+47) 98-23-07-19
-                </li>
-                <li>
-                    <h3 class="icon solid fa-envelope"><span class="label">E-post</span></h3>
-                    <a href="mailto:kontakt@bergensovnsenter.no">kontakt@bergensovnsenter.no</a>
-                </li>
-            </ul>
+                        (+47)  98-23-07-19
+                    </li>
+                    <li>
+                        <h3 class="icon solid fa-envelope"><span class="label">E-post</span></h3>
+                        <a href="mailto:kontakt@bergensovnsenter.no">kontakt@bergensovnsenter.no</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>
 
 <!-- Footer -->
 <footer id="footer">
@@ -145,4 +410,3 @@
 
 </body>
 </html>
-

@@ -2665,20 +2665,21 @@ input, select, textarea {
 /* Stiler for klikkbare lenker */
 .header-links {
     margin-top: 2em; /* Increase the top margin to create more space between logo and links */
-    text-align: center; /* Center align the links */
+    text-align: right; /* Align links to the right */
 }
 
 .header-links a {
     display: block;
     color: #ffffff; /* Set text color to white */
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.2em; /* Decrease font size */
     margin: 0.5em 0; /* Add margin for spacing between links */
 }
 
 .header-links a:hover {
     color: #398378; /* Change text color on hover */
 }
+
 
 
 /* Footer */

@@ -2658,11 +2658,23 @@ a {
 .header-links a {
     display: block;
     color: #ffffff; /* Set text color to white */
-    text-decoration: none; /* Remove underline */
+    text-decoration: none !important; /* Remove underline */
     font-size: 1.2em; /* Decrease font size */
     margin: 0.5em 0; /* Add margin for spacing between links */
 }
 
+a {
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    border-bottom: none; /* Remove the dotted underline */
+    color: #49bf9d;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom-color: transparent;
+    color: #49bf9d !important;
+    text-decoration: none;
+}
 .header-links a:hover {
     color: #398378; /* Change text color on hover */
 }

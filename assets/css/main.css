@@ -4373,3 +4373,116 @@ section {
     transform: scale(1.05);
 }
 
+
+/* Kontakt seksjon */
+#three {
+    padding: 60px 20px;
+    background: #ffffff;
+    border-top: solid 2px #efefef;
+}
+
+#three h2 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#three p {
+    font-size: 1.1em;
+    color: #666;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+#three .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#three .col-8,
+#three .col-4 {
+    padding: 15px;
+}
+
+#three .col-8 {
+    flex: 0 0 65%;
+    max-width: 65%;
+}
+
+#three .col-4 {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+#three form {
+    width: 100%;
+}
+
+#three label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+#three input[type="text"],
+#three input[type="email"],
+#three textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#three ul.actions {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+#three ul.actions li {
+    display: inline;
+}
+
+#three ul.actions input[type="submit"] {
+    background: #398378;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#three ul.actions input[type="submit"]:hover {
+    background: #2b675d;
+}
+
+#three .labeled-icons {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+#three .labeled-icons li {
+    margin-bottom: 15px;
+}
+
+#three .labeled-icons h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+#three .labeled-icons a {
+    color: #398378;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#three .labeled-icons a:hover {
+    color: #2b675d;
+}
+

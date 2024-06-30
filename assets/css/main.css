@@ -4693,3 +4693,99 @@ ul.actions li {
 #footer .copyright li:last-child {
     margin-right: 0;
 }
+
+/* General section styling */
+section {
+    padding: 60px 20px;
+    margin-bottom: 60px; /* Ensure there's space between sections */
+    border-radius: 8px;
+}
+
+/* Specific styles for each section */
+#one, #two, #three {
+    text-align: center;
+}
+
+/* Ensure margin and padding for section two and three */
+#two, #three {
+    margin-bottom: 60px; /* Space between sections */
+    padding-top: 20px; /* Ensure padding within sections */
+}
+
+/* General content styling */
+.app-section, .row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.app-content, .col-8, .col-4 {
+    flex: 1;
+    padding: 20px;
+}
+
+.app-content p, .app-image-container, .service-icon-container, .labeled-icons h3 {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Ensuring proper alignment of images */
+.app-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.app-image {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Services section styling */
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-icon {
+    font-size: 50px;
+    color: #49bf9d;
+}
+
+ul.labeled-icons {
+    list-style: none;
+    padding: 0;
+}
+
+ul.labeled-icons li {
+    margin-bottom: 10px;
+}
+
+ul.actions {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+ul.actions li {
+    margin: 0;
+}

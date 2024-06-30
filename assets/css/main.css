@@ -2576,22 +2576,10 @@ input, select, textarea {
 
 /* HEADER */
 #header {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
-    -moz-flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -moz-align-items: -moz-flex-end;
-    -webkit-align-items: -webkit-flex-end;
-    -ms-align-items: -ms-flex-end;
     align-items: flex-end;
-    -moz-justify-content: space-between;
-    -webkit-justify-content: space-between;
-    -ms-justify-content: space-between;
-    justify-content: space-between;
+    justify-content: center; /* Center content vertically */
     background-color: #1f1815;
     background-attachment: scroll, scroll;
     background-image: url("images/overlay.png"), url("../../images/ulriken-sor.png");
@@ -2609,19 +2597,17 @@ input, select, textarea {
 }
 
 #header > * {
-    -moz-flex-shrink: 0;
-    -webkit-flex-shrink: 0;
-    -ms-flex-shrink: 0;
     flex-shrink: 0;
     width: 100%;
 }
 
 #header > .inner {
-    -moz-flex-grow: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-grow: 1;
     flex-grow: 1;
     margin: 0 0 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the right */
+    justify-content: center; /* Center items vertically */
 }
 
 #header strong,
@@ -2671,7 +2657,7 @@ input, select, textarea {
 .header-links a {
     display: block;
     color: #ffffff; /* Set text color to white */
-    text-decoration: none !important; /* Use !important to ensure it overrides other styles */
+    text-decoration: none; /* Remove underline */
     font-size: 1.2em; /* Decrease font size */
     margin: 0.5em 0; /* Add margin for spacing between links */
 }
@@ -2679,7 +2665,6 @@ input, select, textarea {
 .header-links a:hover {
     color: #398378; /* Change text color on hover */
 }
-
 
 
 /* Footer */

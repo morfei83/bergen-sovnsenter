@@ -2580,7 +2580,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: center; /* Center content vertically */
+    justify-content: space-between; /* Ensure space-between to separate logo and links */
     background-color: #1f1815;
     background-attachment: scroll, scroll;
     background-image: url("images/overlay.png"), url("../../images/ulriken-sor.png");
@@ -2608,7 +2608,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-end; /* Align items to the right */
-    justify-content: center; /* Center items vertically */
+    justify-content: space-between; /* Separate the logo and links */
 }
 
 #header strong,
@@ -2639,9 +2639,10 @@ a {
     border-radius: 0; /* Ensure the container is not a circle */
     margin-left: auto; /* Push the image to the right */
     display: flex; /* Center the image inside the container */
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px; /* Add margin bottom for spacing */
+    align-items: flex-start; /* Align the image to the top */
+    justify-content: flex-start; /* Ensure the logo stays at the top */
+    margin-bottom: auto; /* Push the image to the top */
+    padding-bottom: 20px; /* Add padding bottom for spacing if needed */
 }
 
 #header .image.avatar img {
@@ -2651,7 +2652,8 @@ a {
 
 /* Stiler for klikkbare lenker */
 .header-links {
-    margin-top: 2em; /* Increase the top margin to create more space between logo and links */
+    margin-top: auto; /* Ensure the links are pushed to the center */
+    margin-bottom: auto;
     text-align: right; /* Align links to the right */
 }
 
@@ -2675,6 +2677,7 @@ a:hover {
     color: #49bf9d !important;
     text-decoration: none;
 }
+
 .header-links a:hover {
     color: #398378; /* Change text color on hover */
 }

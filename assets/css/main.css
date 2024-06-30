@@ -2671,7 +2671,7 @@ input, select, textarea {
 .header-links a {
     display: block;
     color: #ffffff; /* Set text color to white */
-    text-decoration: none;
+    text-decoration: none !important; /* Use !important to ensure it overrides other styles */
     font-size: 1.2em; /* Decrease font size */
     margin: 0.5em 0; /* Add margin for spacing between links */
 }

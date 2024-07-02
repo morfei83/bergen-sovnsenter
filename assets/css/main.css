@@ -4463,3 +4463,70 @@ section {
         color: #666;
     }
 </style>
+
+/* Section One */
+#one {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+#one .major {
+    text-align: left;
+    position: relative;
+}
+
+#one .major h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#one .header-underline {
+    width: 60px;
+    height: 5px;
+    background-color: #398378; /* Green underline */
+    margin-bottom: 20px;
+}
+
+#one .app-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#one .app-content {
+    flex: 1 1 60%;
+    text-align: left;
+}
+
+#one .app-content p {
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #555;
+}
+
+#one .app-image-container {
+    flex: 1 1 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#one .app-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    #one .app-section {
+        flex-direction: column;
+    }
+
+    #one .app-content, 
+    #one .app-image-container {
+        flex: 1 1 100%;
+    }
+}

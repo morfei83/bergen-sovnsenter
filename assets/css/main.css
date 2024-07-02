@@ -4171,6 +4171,14 @@ section {
 
 
 /* Om oss seksjon */
+
+#about .header-underline {
+    width: 50px; /* Width of the underline */
+    height: 4px; /* Height of the underline */
+    background-color: #398378; /* Green color */
+    margin: 10px auto; /* Center the underline and add some space above and below */
+}
+
 #about {
     background: #ffffff;
     padding: 60px 20px;
